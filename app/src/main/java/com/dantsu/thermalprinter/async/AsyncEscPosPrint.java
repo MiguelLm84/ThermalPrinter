@@ -4,7 +4,6 @@ import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
-
 import com.dantsu.escposprinter.EscPosCharsetEncoding;
 import com.dantsu.escposprinter.EscPosPrinter;
 import com.dantsu.escposprinter.connection.DeviceConnection;
@@ -12,8 +11,8 @@ import com.dantsu.escposprinter.exceptions.EscPosBarcodeException;
 import com.dantsu.escposprinter.exceptions.EscPosConnectionException;
 import com.dantsu.escposprinter.exceptions.EscPosEncodingException;
 import com.dantsu.escposprinter.exceptions.EscPosParserException;
-
 import java.lang.ref.WeakReference;
+
 
 public abstract class AsyncEscPosPrint extends AsyncTask<AsyncEscPosPrinter, Integer, AsyncEscPosPrint.PrinterStatus> {
     public final static int FINISH_SUCCESS = 1;
@@ -193,8 +192,8 @@ public abstract class AsyncEscPosPrint extends AsyncTask<AsyncEscPosPrinter, Int
     }
 
     public static class PrinterStatus {
-        private AsyncEscPosPrinter asyncEscPosPrinter;
-        private int printerStatus;
+        private final AsyncEscPosPrinter asyncEscPosPrinter;
+        private final int printerStatus;
 
         public PrinterStatus (AsyncEscPosPrinter asyncEscPosPrinter, int printerStatus) {
             this.asyncEscPosPrinter = asyncEscPosPrinter;

@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">ThermalPrinter</string>
+    <string name="click_to_print">Click to print !</string>
+    <string name="ip">IP :</string>
+    <string name="port">Port :</string>
+    <string name="print_by_tcp">PRINT BY TCP</string>
+    <string name="print_by_usb">Print by USB !</string>
+    <string name="default_printer">Default printer</string>
+    <string name="print_by_bluetooth">Print by bluetooth</string>
+    <string name="charcuteria">CHARCUTERIA</string>
+    <string name="carniceria">CARNICERIA</string>
+    <string name="pescaderia">PESCADERIA</string>
+    <string name="guardar">GUARDAR</string>
+    <string name="introducir_ip_y_puerto">INTRODUCIR IP Y PUERTO</string>
 </resources>
